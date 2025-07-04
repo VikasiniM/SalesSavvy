@@ -1,0 +1,86 @@
+/* Signin.css */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.signin-container {
+    max-width: 400px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 28px;
+}
+
+.signin-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #222;
+    text-align: center;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.signin-label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.signin-input {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.signin-input:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+.signin-button {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.signin-button:hover {
+    background: #1d4ed8;
+}
+
+.signin-link {
+    display: block;
+    margin-top: 16px;
+    text-align: right;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.signin-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    .signin-container {
+        padding: 20px 10px;
+        margin: 30px 8px;
+    }
+}

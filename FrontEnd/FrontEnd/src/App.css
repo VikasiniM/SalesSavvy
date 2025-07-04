@@ -1,0 +1,126 @@
+/* General reset and background */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+/* Container for each page */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px rgba(40, 60, 90, 0.08);
+    border: 1px solid #e3e7ed;
+}
+
+/* Headings */
+h1, h2 {
+    color: #1b2267;
+    text-align: center;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #0d2845;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #b0bec5;
+    border-radius: 6px;
+    background: #f8fafc;
+    color: #222;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus {
+    border: 2px solid #1976d2;
+    box-shadow: 0 0 8px #1976d233;
+    outline: none;
+}
+
+/* Radio buttons grouped */
+input[type="radio"] {
+    margin-right: 5px;
+    margin-left: 10px;
+    accent-color: #1976d2;
+}
+
+/* Button styling */
+button {
+    background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 12px #1976d222;
+    border: 2px solid #1976d2;
+    transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #1565c0 0%, #64b5f6 100%);
+    color: #fff;
+    box-shadow: 0 4px 24px #42a5f533;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    gap: 12px;
+}
+
+.nav-buttons button {
+    margin-left: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        margin: 10px;
+        max-width: 98vw;
+    }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .nav-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+    }
+    .nav-buttons button {
+        margin: 10px 0 0 0;
+    }
+}
+
+/* Placeholder color */
+::-webkit-input-placeholder { color: #1976d288; }
+::-moz-placeholder { color: #1976d288; }
+:-ms-input-placeholder { color: #1976d288; }
+::placeholder { color: #1976d288; }
